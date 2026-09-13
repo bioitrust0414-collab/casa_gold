@@ -222,7 +222,7 @@ export default function Home() {
               <ul className="space-y-2 text-sm text-foreground/70">
                 <li>電話：+886-2-XXXX-XXXX</li>
                 <li>郵箱：info@casagold.com</li>
-                <li>地址：台北市中正區</li>
+                <li>地址：新北市淡水區</li>
               </ul>
             </div>
             <div>
