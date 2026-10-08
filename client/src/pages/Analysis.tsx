@@ -5,7 +5,7 @@ import { useEffect, useRef } from "react";
 
 /**
  * 市場分析儀表板頁面
- * 嵌入黃金 (倫敦現貨) + 比特幣即時監控儀表板
+ * 嵌入黃金 (倫敦現貨) + 比特幣即時監控儀表板（同源靜態檔）
  */
 export default function Analysis() {
   const iframeRef = useRef<HTMLIFrameElement>(null);
@@ -43,7 +43,7 @@ export default function Analysis() {
           </div>
           <div className="flex items-center gap-3">
             <a
-              href="https://htmlpreview.github.io/?https://raw.githubusercontent.com/bioitrust0414-collab/bitcorn-analysis/main/index.html"
+              href="/analysis-dashboard.html"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm text-foreground/70 hover:text-accent transition-colors flex items-center gap-1"
@@ -55,11 +55,11 @@ export default function Analysis() {
         </div>
       </nav>
 
-      {/* 儀表板本體 */}
+      {/* 儀表板本體（同源，不依賴外部 CDN） */}
       <div className="flex-1 pt-16">
         <iframe
           ref={iframeRef}
-          src="https://htmlpreview.github.io/?https://raw.githubusercontent.com/bioitrust0414-collab/bitcorn-analysis/main/index.html"
+          src="/analysis-dashboard.html"
           title="黃金與比特幣即時監控儀表板"
           className="w-full border-0"
           style={{ height: "calc(100vh - 64px)" }}
