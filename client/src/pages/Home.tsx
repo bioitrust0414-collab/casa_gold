@@ -33,6 +33,7 @@ export default function Home() {
             <Link href="/about" className="text-foreground/80 hover:text-accent transition-colors">關於我們</Link>
             <Link href="/services" className="text-foreground/80 hover:text-accent transition-colors">服務項目</Link>
             <Link href="/contact" className="text-foreground/80 hover:text-accent transition-colors">聯繫我們</Link>
+            <Link href="/mahjong" className="text-foreground/80 hover:text-accent transition-colors">🀄 休閒遊戲</Link>
           </div>
           <Link href="/contact">
             <Button variant="outline" className="btn-outline-gold">
@@ -182,6 +183,28 @@ export default function Home() {
 
 
 
+      {/* 休閒遊戲推薦 */}
+      <section className="py-16 bg-background border-t border-accent/20">
+        <div className="container">
+          <div className="card-luxury flex flex-col md:flex-row items-center gap-8 p-8">
+            <div className="text-6xl">🀄</div>
+            <div className="flex-1 text-center md:text-left">
+              <h3 className="text-2xl font-bold mb-2 text-foreground" style={{fontFamily: "'Playfair Display', serif"}}>
+                休閒一刻 · 麻將消除
+              </h3>
+              <p className="text-foreground/70 mb-4">
+                工作之餘來一局經典麻將接龍吧！完全可解的牌局設計，考驗觀察與策略，放鬆心情。
+              </p>
+              <Link href="/mahjong">
+                <Button className="btn-gold">
+                  立即遊玩 <ArrowRight className="ml-2 w-4 h-4" />
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA 區 */}
       <section className="py-20 bg-card border-t border-accent/20">
         <div className="container text-center">
@@ -215,6 +238,7 @@ export default function Home() {
                 <li><Link href="/" className="text-foreground/70 hover:text-accent">首頁</Link></li>
                 <li><Link href="/about" className="text-foreground/70 hover:text-accent">關於我們</Link></li>
                 <li><Link href="/services" className="text-foreground/70 hover:text-accent">服務項目</Link></li>
+                <li><Link href="/mahjong" className="text-foreground/70 hover:text-accent">🀄 休閒遊戲</Link></li>
               </ul>
             </div>
             <div>
