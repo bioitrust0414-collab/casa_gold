@@ -9,6 +9,7 @@ import About from "./pages/About";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import Mahjong from "./pages/Mahjong";
+import Analysis from "./pages/Analysis";
 function Router() {
   // make sure to consider if you need authentication for certain routes
   return (
@@ -18,6 +19,7 @@ function Router() {
       <Route path={"/services"} component={Services} />
       <Route path={"/contact"} component={Contact} />
       <Route path={"/mahjong"} component={Mahjong} />
+      <Route path={"/analysis"} component={Analysis} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
