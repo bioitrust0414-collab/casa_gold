@@ -6,10 +6,6 @@ import { Link } from "wouter";
 /**
  * Casa Gold International 首頁
  * 設計系統：玄青色背景 + 金色強調
- * - Hero 區展示品牌願景與核心價值
- * - 功能卡片展示三大服務
- * - CTA 按鈐引導用戶联繫詳詢
- * - 黃金價格走勢圖表展示
  */
 
 export default function Home() {
@@ -32,7 +28,6 @@ export default function Home() {
             <Link href="/" className="text-foreground/80 hover:text-accent transition-colors">首頁</Link>
             <Link href="/about" className="text-foreground/80 hover:text-accent transition-colors">關於我們</Link>
             <Link href="/services" className="text-foreground/80 hover:text-accent transition-colors">服務項目</Link>
-            <Link href="/analysis" className="text-foreground/80 hover:text-accent transition-colors">📊 市場分析</Link>
             <Link href="/contact" className="text-foreground/80 hover:text-accent transition-colors">聯繫我們</Link>
             <Link href="/mahjong" className="text-foreground/80 hover:text-accent transition-colors">🀄 休閒遊戲</Link>
           </div>
@@ -182,32 +177,8 @@ export default function Home() {
         </div>
       </section>
 
-
-
-      {/* 市場分析推薦 */}
-      <section className="py-16 bg-background border-t border-accent/20">
-        <div className="container">
-          <div className="card-luxury flex flex-col md:flex-row items-center gap-8 p-8">
-            <div className="text-6xl">📊</div>
-            <div className="flex-1 text-center md:text-left">
-              <h3 className="text-2xl font-bold mb-2 text-foreground" style={{fontFamily: "'Playfair Display', serif"}}>
-                市場分析 · 即時金價儀表板
-              </h3>
-              <p className="text-foreground/70 mb-4">
-                倫敦現貨金價與比特幣即時監控，支援台幣換算、技術圖表、支撐阻力警報，掌握市場脈動。
-              </p>
-              <Link href="/analysis">
-                <Button className="btn-gold">
-                  查看儀表板 <ArrowRight className="ml-2 w-4 h-4" />
-                </Button>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* 休閒遊戲推薦 */}
-      <section className="py-12 bg-background">
+      <section className="py-16 bg-background border-t border-accent/20">
         <div className="container">
           <div className="card-luxury flex flex-col md:flex-row items-center gap-8 p-8">
             <div className="text-6xl">🀄</div>
@@ -261,7 +232,6 @@ export default function Home() {
                 <li><Link href="/" className="text-foreground/70 hover:text-accent">首頁</Link></li>
                 <li><Link href="/about" className="text-foreground/70 hover:text-accent">關於我們</Link></li>
                 <li><Link href="/services" className="text-foreground/70 hover:text-accent">服務項目</Link></li>
-                <li><Link href="/analysis" className="text-foreground/70 hover:text-accent">📊 市場分析</Link></li>
                 <li><Link href="/mahjong" className="text-foreground/70 hover:text-accent">🀄 休閒遊戲</Link></li>
               </ul>
             </div>
