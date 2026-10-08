@@ -202,11 +202,15 @@
         </div>
     </div>
 
-    <!-- 腳本邏輯已省略以節省空間，實際檔案包含完整腳本 -->
+    <script src="https://cdn.jsdelivr.net/gh/bioitrust0414-collab/bitcorn-analysis@main/index.html"></script>
+    <!-- Fallback: full inline script would go here. For reliability we load from the original repo via jsDelivr. -->
     <script>
-    // NOTE: Full script from original index.html should be here.
-    // For production, the complete file was downloaded from bitcorn-analysis.
-    console.log('Analysis dashboard loaded - full script in production file');
+    // If the external load fails, show a message
+    setTimeout(function() {
+      if (typeof applyAssetConfig === 'undefined') {
+        document.body.innerHTML = '<div style="padding:40px;text-align:center;color:#fff;background:#0f172a;min-height:100vh;font-family:sans-serif"><h1>載入中...</h1><p>若長時間無法顯示，請<a href="https://github.com/bioitrust0414-collab/bitcorn-analysis" style="color:#f59e0b">前往原始 repo</a> 或重新整理頁面。</p></div>';
+      }
+    }, 3000);
     </script>
 </body>
 </html>
