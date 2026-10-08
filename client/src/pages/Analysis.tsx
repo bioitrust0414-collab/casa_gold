@@ -43,7 +43,7 @@ export default function Analysis() {
           </div>
           <div className="flex items-center gap-3">
             <a
-              href="https://raw.githack.com/bioitrust0414-collab/bitcorn-analysis/main/index.html"
+              href="https://htmlpreview.github.io/?https://raw.githubusercontent.com/bioitrust0414-collab/bitcorn-analysis/main/index.html"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm text-foreground/70 hover:text-accent transition-colors flex items-center gap-1"
@@ -59,7 +59,7 @@ export default function Analysis() {
       <div className="flex-1 pt-16">
         <iframe
           ref={iframeRef}
-          src="https://raw.githack.com/bioitrust0414-collab/bitcorn-analysis/main/index.html"
+          src="https://htmlpreview.github.io/?https://raw.githubusercontent.com/bioitrust0414-collab/bitcorn-analysis/main/index.html"
           title="黃金與比特幣即時監控儀表板"
           className="w-full border-0"
           style={{ height: "calc(100vh - 64px)" }}
